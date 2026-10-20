@@ -1,0 +1,15 @@
+# Proxy de la API hacia tu servidor (CAMBIA la dirección; sin barra final)
+/api/*  https://consultorio-erp.fly.dev/api/:splat  200!
+# Enlace del paciente
+/r/*    /responder.html  200
+# Ocultar código y archivos internos (el sitio estático solo debe mostrar la interfaz)
+/server/*     /404.html  404!
+/tests/*      /404.html  404!
+/tools/*      /404.html  404!
+/docs/*       /404.html  404!
+/data/*       /404.html  404!
+/package.json /404.html  404!
+/Dockerfile   /404.html  404!
+/fly.toml     /404.html  404!
+/README.md    /404.html  404!
+/iniciar.*    /404.html  404!

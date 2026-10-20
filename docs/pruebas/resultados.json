@@ -1,0 +1,110 @@
+[
+ {
+  "prueba": "Rechaza contraseña débil con mensaje claro",
+  "ok": true
+ },
+ {
+  "prueba": "Entra al panel \"Hoy\" tras configurar",
+  "ok": true
+ },
+ {
+  "prueba": "Menú de administrador incluye Usuarios, Auditoría y Respaldo",
+  "ok": true
+ },
+ {
+  "prueba": "Se crea el paciente y abre su ficha",
+  "ok": true
+ },
+ {
+  "prueba": "Ciclo de 4 sesiones creado",
+  "ok": true
+ },
+ {
+  "prueba": "Test Rosenberg con puntaje automático (esperado 20 · Baja)",
+  "ok": true
+ },
+ {
+  "prueba": "Indicador muestra \"Guardado\"",
+  "ok": true
+ },
+ {
+  "prueba": "Tras recargar la página los datos siguen (están en el servidor)",
+  "ok": true
+ },
+ {
+  "prueba": "Otro navegador sin sesión ve la pantalla de login, no datos",
+  "ok": true
+ },
+ {
+  "prueba": "Tras REINICIAR el servidor los datos y la sesión persisten",
+  "ok": true
+ },
+ {
+  "prueba": "Muestra aviso \"Sin conexión\" y mantiene el cambio pendiente",
+  "ok": true
+ },
+ {
+  "prueba": "Al volver la red guarda solo, sin intervención",
+  "ok": true
+ },
+ {
+  "prueba": "Se genera el PDF de la historia",
+  "ok": true
+ },
+ {
+  "prueba": "El PDF contiene los datos y NO muestra el menú ni botones",
+  "ok": true
+ },
+ {
+  "prueba": "Con clave temporal obliga a crear una propia",
+  "ok": true
+ },
+ {
+  "prueba": "Recepción NO ve Auditoría, Respaldo, Usuarios ni Reportes",
+  "ok": true
+ },
+ {
+  "prueba": "Recepción ve contacto pero NO motivo, riesgo, tests ni consentimiento",
+  "ok": true
+ },
+ {
+  "prueba": "Saltarse la interfaz y llamar a la API directo también es rechazado (403)",
+  "ok": true
+ },
+ {
+  "prueba": "La auditoría muestra usuarios reales (lucia y rosa), no \"Profesional\"",
+  "ok": true
+ },
+ {
+  "prueba": "Registra intento denegado de recepción",
+  "ok": true
+ },
+ {
+  "prueba": "Hay respaldos cifrados (.cerp) listados",
+  "ok": true
+ },
+ {
+  "prueba": "Sin desbordamiento horizontal en el panel Hoy",
+  "ok": true
+ },
+ {
+  "prueba": "Ficha del paciente cabe en la pantalla del celular",
+  "ok": true
+ },
+ {
+  "prueba": "La firma con el dedo dibuja trazo en el lienzo",
+  "ok": true
+ },
+ {
+  "prueba": "Consentimiento guardado con firma",
+  "ok": true
+ },
+ {
+  "prueba": "La firma guardada se vuelve a mostrar correctamente",
+  "ok": true
+ },
+ {
+  "prueba": "Sin errores de JavaScript en consola durante toda la prueba",
+  "ok": true
+ }
+]

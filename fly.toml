@@ -1,0 +1,26 @@
+# Ejemplo para Fly.io (cualquier host con Docker + disco persistente sirve: Render, Railway, VPS...).
+# El nombre "app" debe ser único; si lo cambias, actualiza la dirección en netlify.toml.
+app = "consultorio-erp"
+primary_region = "gru"
+
+[build]
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  # SQLite = una sola instancia, siempre encendida (no escalar a más de 1 máquina).
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+[mounts]
+  source = "erp_data"
+  destination = "/data"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1

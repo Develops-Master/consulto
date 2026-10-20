@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consultorio ERP</title><link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="css/styles.css"></head>
+<body class="locked">
+<div id="auth" hidden></div>
+<div class="app">
+  <aside id="side">
+    <div class="brand"><span class="logo">🩺</span><div><b>Consultorio</b><small>ERP · Gestión clínica</small></div></div>
+    <nav id="nav"></nav>
+    <div class="foot">v1.6 · servidor con base de datos cifrada</div>
+  </aside>
+  <div class="overlay" id="ov" onclick="App.toggle()"></div>
+  <div class="content">
+    <div class="top"><button class="burger" onclick="App.toggle()" aria-label="Menú">☰</button><h1 id="title"></h1><button id="gbtn" onclick="Buscar.abrir()" aria-label="Buscar" title="Buscar (Ctrl+K)">🔍</button><span id="sync" class="sync ok">✓ Guardado</span><span class="date" id="date"></span><button id="quien" class="quien" onclick="Auth.menu()" aria-label="Mi cuenta"></button></div>
+    <main id="view"></main>
+  </div>
+</div>
+<dialog id="dlg"></dialog><dialog id="confirmdlg" class="confirmdlg" aria-labelledby="confirm-title"></dialog><div id="prt"></div><div id="toasts" class="toast-container position-fixed top-0 end-0 p-3" aria-live="polite" aria-atomic="true"></div>
+<!-- NÚCLEO (el orden importa) -->
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="js/core/ui.js"></script>
+<script src="js/core/tema.js"></script>
+<script src="js/core/api-local.js"></script>
+<script src="js/core/api.js"></script>
+<script src="js/core/app.js"></script>
+<script src="js/core/auth.js"></script>
+<!-- MÓDULOS: para agregar uno nuevo, crea su archivo y añade aquí su línea -->
+<script src="js/modules/cie10.js"></script>
+<script src="js/modules/pacientes.js"></script>
+<script src="js/modules/medicamentos.js"></script>
+<script src="js/modules/tareas.js"></script>
+<script src="js/modules/plan.js"></script>
+<script src="js/modules/consentimiento.js"></script>
+<script src="js/modules/escalas.js"></script>
+<script src="js/modules/tests.js"></script>
+<script src="js/modules/medicion-logica.js"></script>
+<script src="js/modules/riesgo-logica.js"></script>
+<script src="js/modules/riesgo.js"></script>
+<script src="js/modules/cierre.js"></script>
+<script src="js/modules/medicion.js"></script>
+<script src="js/modules/adjuntos.js"></script>
+<script src="js/modules/auditoria.js"></script>
+<script src="js/modules/sesiones.js"></script>
+<script src="js/modules/espera.js"></script>
+<script src="js/modules/recordatorios.js"></script>
+<script src="js/modules/calendario.js"></script>
+<script src="js/modules/agenda.js"></script>
+<script src="js/modules/pagos.js"></script>
+<script src="js/modules/cuentas.js"></script>
+<script src="js/modules/gastos.js"></script>
+<script src="js/modules/exportar.js"></script>
+<script src="js/modules/buscar.js"></script>
+<script src="js/modules/reportes.js"></script>
+<script src="js/modules/derivaciones.js"></script>
+<script src="js/modules/historial.js"></script>
+<script src="js/modules/hoy.js"></script>
+<script src="js/modules/registro.js"></script>
+<script src="js/modules/usuarios.js"></script>
+<script src="js/modules/respaldo.js"></script>
+<script src="js/main.js"></script>
+</body></html>

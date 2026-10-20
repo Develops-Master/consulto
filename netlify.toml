@@ -1,0 +1,4 @@
+# index.html está en la raíz. Netlify publica la raíz; _redirects oculta server/, tests/, docs/, etc.
+# OJO: Netlify solo sirve la interfaz. El servidor Node (server/) debe correr aparte (ver docs/NETLIFY.md).
+[build]
+  publish = "."

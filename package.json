@@ -1,0 +1,13 @@
+{
+  "name": "consultorio-erp",
+  "version": "1.6.0-bloque6",
+  "description": "ERP para consultorio de psicología: servidor local con base de datos, usuarios, auditoría y respaldos cifrados",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/api.test.js tests/riesgo.test.js tests/medicion.test.js",
+    "restaurar": "node --disable-warning=ExperimentalWarning tools/restaurar.js",
+    "reset-clave": "node --disable-warning=ExperimentalWarning tools/reset-clave.js"
+  }
+}
